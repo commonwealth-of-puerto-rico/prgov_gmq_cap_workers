@@ -5,6 +5,7 @@
 # through this definitions file.
 # Require the ruby standard logger
 require 'logger'
+
 # Our hack for the helper's expectation of a Webserver's environment.
 class Goliath
   def self.env
@@ -20,12 +21,12 @@ end
 
 # Hack to define the GMQ::Workers::Grape used by helpers/errors.rb
 module GMQ
-	module Workers
-		module Grape
-			module Middleware
-				class Base
-				end
-			end
-		end
-	end
+  module Workers
+    module Grape
+      module Middleware
+        class Base
+        end
+      end
+    end
+  end
 end
